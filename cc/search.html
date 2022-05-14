@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <title>search</title>
+    <link rel="stylesheet" href="./iconfont/iconfont.css">
+    <link rel="stylesheet" href="./css/search.css">
+    <script>
+        var h = 0;
+        function loginbox1() {
+            if (h == 0) {
+                document.getElementById('light').style.display = 'block';
+                document.getElementById('fade').style.display = 'block';
+            }
+            if (h == 1) {
+                document.getElementById('light').style.display = 'none';
+                document.getElementById('fade').style.display = 'none';
+                document.getElementById("regbox").style.display = "none";
+            }
+            h++;
+            if (h == 2) {
+                h = 0;
+            }
+        }
+
+        function getValue(id) {
+            return document.getElementById(id).value;
+        }
+        function login() {
+            if (
+                getValue('username') == "koko" && getValue('password') == "keke") {
+                return true;
+            } else {
+                alert("错误的密码或者账号捏")
+                return false;
+            }
+        }
+        function registeryz() {
+            if (
+                getValue('registeremail') == "keke13390@163.com" && getValue('registername') == "Coco"
+                && getValue('registerpas1') == "123456" && getValue('registerpas2') == "123456") {
+                alert("注册成功了捏")
+                return true;
+            } else {
+                alert("格式错了或者密码错了捏")
+                return false;
+            }
+
+        }
+        var a = 0;
+        function reg1(id) {
+            if (a == 0) {
+                document.getElementById("regbox").style.display = "block"
+                document.getElementById("light").style.display = "none"
+            }
+            if (a == 1) {
+                document.getElementById("regbox").style.display = "block"
+                document.getElementById("light").style.display = "none"
+            }
+            a++;
+            if (a == 2) {
+                a = 0;
+            }
+
+        }
+        var b = 0;
+        function loginfh(id) {
+            document.getElementById("regbox").style.display = "none";
+            document.getElementById("light").style.display = "block";
+        }
+        function regbtneixt(id) {
+            document.getElementById("regbox").style.display = "none";
+            document.getElementById("light").style.display = "none";
+            h = 0;
+            a = 0;
+        }
+
+    </script>
+</head>
+
+<body>
+    <!-- title -->
+    <div class="menu">
+        <!-- 更多 -->
+        <a href="#" class="a1"><img class="more1" src="./img/more.svg" width="39.5px" alt=""></a>
+
+        <!-- 登录 -->
+        <a href="#" class="a2" onclick="loginbox1()">
+            <img class="avatar" src="./img/avatar.png" width="39.5px" alt="">
+        </a>
+    </div>
+    <!-- 登录窗口 -->
+    <div id="light" class="white_content">
+        <div class="closure">
+            <a class="closure-btn" href="javascript:void(0)" onclick="loginbox2()">
+                <!-- <img src="./img/关闭实心.svg" alt="" width="25px"> -->
+                x
+            </a>
+        </div>
+
+        <form action="home.html">
+            <div class="login">
+                <!-- tit -->
+                <div id="register-demo" class="tit">Login</div>
+                <!-- 用户名 -->
+                <input id="username" class="login-txt" type="text" placeholder="Username" autocomplete="off">
+                <!-- 密码 -->
+                <input id="password" class="login-pas" type="password" placeholder="Password">
+                <!-- 登录按钮 -->
+                <div><button id="button" class="login-btn" type="submit" onclick="return login()">
+                        <p id="reg-btn">Login</p>
+                    </button></div>
+                <!-- 注册 -->
+                <div class="register-box">
+                    <p id="register-p">Damn no account ?</p>
+                    Go&nbsp;<a id="reg-a" class="register" href="#" onclick="reg1()">Register</a> !
+                </div>
+                <!-- <a id="lgoina" onclick="login1()" href="#">登录</a>!</div> -->
+            </div>
+        </form>
+    </div>
+    <div id="fade" class="black_overlay"></div>
+    <!-- 注册窗口 -->
+    <div id="regbox" class="reg">
+        <a class="reg-btn" href="#" onclick="regbtneixt()">
+            <p class="regbtn-txt1">x</p>
+            <p class="regbtn-txt2">取消</p>
+        </a>
+        <div class="reg-box">
+            <form action="home.html">
+                <div class="reg-tit">Register</div>
+                <input id="registeremail" class="reg-email" type="text" placeholder="Email">
+                <input id="registername" class="reg-name1" type="text" placeholder="Username">
+                <input id="registerpas1" class="reg-pas1" type="password" placeholder="Password">
+                <input id="registerpas2" class="reg-pas2" type="password" placeholder="Please re-enter your password">
+                <div><button class="regbtn" onclick="return registeryz()">Register</button>
+                    <div>I have an account</div>to <a id="reg-wz" onclick="loginfh()" href="#">Login</a> !
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- 搜索 -->
+    <form class="parent" action="https://www.google.com/search" target="_bank">
+        <div class="logo">
+            <img src="./img/google_logo.svg" alt="">
+        </div>
+        <div class="search">
+            <input class="search-text" type="text" name="q" autocomplete="off">
+            <!-- <input class="search-btn" type="submit"></input> -->
+        </div>
+    </form>
+</body>
+
+</html>

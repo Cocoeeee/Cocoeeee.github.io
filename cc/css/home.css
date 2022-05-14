@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+    /* box-sizing: border-box; */
+    font-size: 22px;
+}
+.navbar{
+    width: 100%;
+    position: fixed;
+}
+.top{
+    height: 50px;
+    border: 1px solid red;
+    color: aqua;
+}
+.logo{
+    width: 100px;
+    height: 50px;
+    /* transform: translateY(-50%); */
+    border: 1px solid red;
+    text-align: center;
+    line-height: 50px;
+    
+    
+}
+.logo-img{
+    width: 100px;
+}
