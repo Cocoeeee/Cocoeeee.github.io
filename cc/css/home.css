@@ -4,34 +4,48 @@ body{
     background-color: #fff;
 }
 *{
-    /* border: 1px solid red; */
+    border: 1px solid red;
+}
+@media (max-width: 600px){
+    .cbl{
+        display: none;
+    }
 }
 .flex{
     display: flex;
 }
-.side{
-    width: 200px;
+.white{
+    background-color: white;
 }
-.avatar{
-    padding: 10px 0 0 10px;
-    align-items: center;
-    justify-content: center;
-    /* border-bottom: 1px solid #999; */
+.flex1{
+    flex: 1;
 }
-.navigation{
-    padding: 10px 20px;
-    margin: 5px 0 0;
-    border-top-right-radius: 2em;
-    border-bottom-right-radius: 2em;
-    transition: all 0.5s;
-    
+.column{
+    flex-direction: column;
 }
-.navigation:hover{
-    background-color: rgb(201, 201, 201);
+.mg8{
+    margin: 8px;
 }
-.bottom{
-    /* display: flex; */
-    align-items: flex-end;
-    justify-content: bottom;
-    
+.center{
+    justify-content: space-around;
+}
+.fk{
+    justify-content: space-between;
+}
+.anhyc{
+    width: 400px;
+    height: 250px;
+}
+.anhycnr{
+    height: 150px;
+    padding: 24px 24px 16px;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    border: 1px solid #999;
+} 
+.an{
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    padding: 15px 24px 16px;
+    border: 1px solid #999;
 }
