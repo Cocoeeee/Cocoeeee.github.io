@@ -48,4 +48,16 @@ body{
     border-bottom-right-radius: 1em;
     padding: 15px 24px 16px;
     border: 1px solid #999;
+    border-top: none;
+}
+.bk1{
+    border: 1px solid #999;
+    border-top-left-radius: 2em;
+    border-top-right-radius:2em;
+}
+.bk2{
+    border: 1px solid #999;
+    border-top: none;
+    border-bottom-left-radius: 2em;
+    border-bottom-right-radius: 2em;
 }
