@@ -13,11 +13,11 @@ body{
 .yy{
     box-shadow: 5px 5px 15px #eee;
 }
-/* @media (max-width: 600px){
+@media (max-width: 600px){
     .cbl{
         display: none;
     }
-} */
+}
 .flex{
     display: flex;
 }
