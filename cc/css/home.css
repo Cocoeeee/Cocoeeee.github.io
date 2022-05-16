@@ -36,6 +36,9 @@ body{
 .mgr{
     margin-right: 10px;
 }
+.mgr2{
+    margin-right: 15px;
+}
 .mgl{
     margin-left: 26px;
 }
@@ -82,7 +85,7 @@ body{
     border-bottom: 1px solid #999;
 }
 .nbj{
-    padding: 10px 16px 10px 24px;
+    padding: 10px 10px 10px 10px;
 }
 .bk5{
     border-top-right-radius: 2em;
