@@ -108,6 +108,11 @@ body{
 .bk9{
     border-radius: 2em;
 }
+.bk10{
+    border-radius: 10em;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+}
 .blue{
     color: #1a73ec;
 }
@@ -123,3 +128,16 @@ body{
 .qdbj{
     background: none;
 }
+.cc{
+    transition: all 0.5s;
+}
+.xs{
+    display: none;
+    transition: all 0.5s;
+}
+
+.cc:hover .xs{
+    display: block;
+
+}
+
