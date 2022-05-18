@@ -15,11 +15,10 @@ body{
     box-shadow: 5px 5px 15px #eee;
 }
 @media (max-width: 600px) {
-    /* 小屏幕上取消侧边栏，后面学js时会教怎么弹出 */
-    .ceBian {
-      display: none;
+    .mainner {
+    display: none;
     }
-}
+    }    
 .flex{
     display: flex;
 }
@@ -97,14 +96,30 @@ body{
     border-bottom-right-radius: 2em;
 }
 .bk6{
-    border-radius: 2em;
+    border-radius: 0.5em;
 }
 .bk7{
     border-left: none;
+}
+.bk8{
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+}
+.bk9{
+    border-radius: 2em;
 }
 .blue{
     color: #1a73ec;
 }
 .black{
     color: black;
+}
+.cp:hover{
+    background-color: rgb(239, 240, 241)
+}
+.cp1:hover{
+    background-color: #eee;
+}
+.qdbj{
+    background: none;
 }
