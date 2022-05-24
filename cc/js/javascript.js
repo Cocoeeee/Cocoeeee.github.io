@@ -28,3 +28,20 @@ function yiwen(){
         b = 0;
     }
 }
+
+function shouye(){
+    document.getElementById('guan').style.display = 'block';
+    document.getElementById('guan1').style.display = 'none';
+    document.getElementById('cr').style.color = '#1967d2';
+    document.getElementById('ys').style.backgroundColor = '#e8f0fe';
+    document.getElementById('cr1').style.color = 'black';
+    document.getElementById('ys1').style.backgroundColor = 'white';
+}
+function geren(){
+    document.getElementById('guan').style.display = 'none';
+    document.getElementById('guan1').style.display = 'block';
+    document.getElementById('cr1').style.color = '#1967d2';
+    document.getElementById('ys1').style.backgroundColor = '#e8f0fe';
+    document.getElementById('cr').style.color = 'black';
+    document.getElementById('ys').style.backgroundColor = 'white';
+}

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
     <title>Home</title>
     <link rel="stylesheet" href="./css/home.css" />
-    <script src="./js/"></script>
+    <script src="./js/javascript.js"></script>
   </head>
   <body class="flex">
     <!-- 侧边栏 -->
@@ -13,16 +13,16 @@
     <div class="flex" style="margin-left:10px;padding:4px;align-items: center;">
       <img style="height: 50px;" src="./img/google_logo.svg" alt=""></div>
       <div class="flex column" style="margin: 10px 0 0 0;">
-      <a href="#" class="flex nbj bk5 cp">
-        <div class="flex">
+      <a id="ys" href="#" class="flex nbj bk5 cp" onclick="shouye()">
+        <div class="flex" >
           <img class="mgr bk6" style="margin-left:10px;width: 20px;height:20px;" src="./img/用户.svg" alt="">
-          <div class="black">首页</div>
+          <div id="cr" class="black">首页</div>
         </div>
       </a>
-      <a href="#" class="flex nbj bk5 cp">
+      <a id="ys1" href="#" class="flex nbj bk5 cp" onclick="geren()">
         <div class="flex">
           <img class="mgr bk6" style="margin-left:10px;width: 20px;height:20px;" src="./img/个人信息_o (1).svg" alt="">
-          <div class="black">个人信息</div>
+          <div id="cr1" class="black">个人信息</div>
         </div>
       </a>
       <a href="#" class="flex nbj bk5 cp">
@@ -96,7 +96,8 @@
       <!-- 内容区 -->
       <div style="overflow: auto;" class="flex1 flex mg8 center yc">
         <!-- 左区 -->
-        <div class="flex column" style="flex: 3;height: 1300px;">
+        
+        <div id="guan" class="flex column" style="flex: 3;height: 1300px;display: none;">
           <div style="width: 840px; padding: 0 48px">
             <div style="width: 840px; height: 220px">
               <!-- 头像 -->
@@ -120,7 +121,7 @@
                 style="width: 830px;height: 36px;margin: 11.76px auto 0;text-align: center;
                 "
               >
-                欢迎使用
+                欢迎使用1
               </h1>
               <!-- 详细 -->
               <div
@@ -193,7 +194,7 @@
             <a href="#" class="flex bk4 cp" style="width:839px;padding:15px 24px 16px 0">
               <div class="flex" style="align-items: center;">
                 <img class="mgr" style="width: 24px; height: 24px;" src="./img/search.png" alt="">
-                <div class="black" style="margin: 0 555.5px 0 0;">搜索 Google 账号</div>
+                <div class="black" style="width: 750px;">搜索 Google 账号</div>
                 <span class="black">></span>
               </div>
             </a>
@@ -202,7 +203,7 @@
             <a href="#" class="flex bk4" style="width:839px;padding:15px 24px 16px 0px">
               <div class="flex" style="align-items: center;">
                 <img class="mgr" style="width: 24px; height: 24px;" src="./img/疑问.svg" alt="">
-                <div class="black" style="margin: 0 585px 0 0;">查看帮助选项</div>
+                <div class="black" style="width: 750px;">查看帮助选项</div>
                 <span class="black" >></span>
               </div>
             </a>
@@ -213,22 +214,179 @@
           <a href="#" class="flex" style="width: 813px; padding: 20px 0;">
               <div class="flex" style="align-items: center;">
                 <img class="mgr" style="width: 24px; height: 24px;" src="./img/对话信息.svg" alt="">
-                <div class="black" style="margin: 0 615px 0 0;">发送反馈</div>
+                <div class="black" style="width: 750px;">发送反馈</div>
                 <span class="black">></span>
             </div>
           </a>
         </div>   
         </div>
-        </div>
         <div class="flex column">
-        <div class="flex" style="width: 788px;padding:24px;">
-        <div>只有您本人可以查看您的设置。您可能还想查看 Google 地图、Google 搜索或您最常使用的其他 Google 服务的设置。Google 会确保您数据的隐私性和安全性。<a class="blue" href="#">了解详细</a> </div>
-        <img style="width:43px;height: 43px;" src="./img/privacypolicy_icon_with_new_shield_48x48_3426417659bc0ba9f7866eead0c3e857.png" alt="">
-        </div>
-        </div>
+          <div class="flex" style="width: 788px;padding:24px;">
+          <div>只有您本人可以查看您的设置。您可能还想查看 Google 地图、Google 搜索或您最常使用的其他 Google 服务的设置。Google 会确保您数据的隐私性和安全性。<a class="blue" href="#">了解详细</a> </div>
+          <img style="width:43px;height: 43px;" src="./img/privacypolicy_icon_with_new_shield_48x48_3426417659bc0ba9f7866eead0c3e857.png" alt="">
           </div>
           </div>
         </div>
+
+          </div>
+          <!-- 2 -->
+          <div id="guan1" class="flex column" style="flex: 3;height: 1300px;display: block;">
+            <div style="width: 840px; padding: 0 48px">
+              <div style="width: 840px;">
+                <!-- 欢迎 -->
+                <h1 style="width: 830px;height: 36px;margin: 11.76px auto 0;text-align: center;">个人信息</h1>
+                <!-- 详细 -->
+                <div style="width: 830px;height: 24px;margin: 14.1px auto 0;text-align: center;"
+                >您在各种 Google 服务中的个人信息和偏好设置
+                </div>
+                <div class="flex">
+                  <div class="flex" style="margin: 0px 0;padding: 32px 0 0;;align-items: center;justify-content: space-between;">
+                    <div>
+                      <h2>您在 Google 服务中的个人资料信息</h2>
+                      <p style="padding: 0 45px 0 0;">个人信息以及用于管理这些信息的选项。您可以向他人公开部分信息（例如您的详细联系信息），以方便他们与您联系。您还可以查看您的个人资料的摘要。</p>
+                    </div>
+                    <img src="./img/profile_scene_visible_360x128_18500c161aac04e9279fbb234b7de818.png" alt="">
+                  </div>
+                </div>
+              </div>
+              
+              <!-- 基本信息 -->
+              <div>
+              <div 
+              style="margin: 20px 0;border: 1px solid #999;border-radius: 1em;" class="flex column">
+                <div style="padding: 10px 0px 0;">
+                  <div class="" style="padding:20px 0 0 20px;border-bottom: none;margin-bottom: 10px;">
+                    <h2 style="font-size: 1.5rem;margin:0">基本信息</h2>
+                    <div>使用 Google 服务的其他用户可能会看到部分信息。<a href="#">了解详情</a></div>
+                  </div>
+                  <!-- 照片 -->
+                  <a href="#" class="flex bk12 cp black" style="width:838px;height:100px;align-items: center;">
+                    <div class="flex mgl3" style="width: 156px;"><h3 style="margin:0;">照片</h3></div>
+                    <div style="width: 580px;">更改照片可帮助您个性化您的帐号</div>
+                    <img style="width: 58px;height: 58px;margin-right: 10px;border-radius: 2em;" src="" alt="">
+                    </a>
+                    <!-- 姓名 -->
+                    <a href="#" class="flex bk12 cp black" style="width: 838px;height:60px;align-items:center;">
+                        <div class="flex mgl3" style="width: 156px;"><h3 style="margin: 0;">姓名</h3></div>
+                        <div style="width: 620px;">XXX</div>
+                        <div style="margin-right: 10px;">></div>
+                      </a>
+                      <!-- 生日 -->
+                      <a href="#" class="flex bk12 cp black" style="width: 838px;height: 60px;align-items: center;">
+                      <div class="flex mgl3" style="width: 156px;"><h3 style="margin: 0;">生日</h3></div>
+                      <div style="width: 620px;">May 24,2022</div>
+                      <div  style="margin-right: 10px;">></div>
+                      </a>
+                      <a href="#" class="flex cp black" 
+                      style="width: 837px;height:60px;align-items: center;border-bottom-left-radius: 1em;border-bottom-right-radius: 1em;">
+                        <div class="flex mgl3" style="width: 156px;"><h3 style="margin: 0;">性别</h3></div>
+                        <div style="width: 620px;">未知</div>
+                        <div style="margin-right: 10px;">></div>
+                      </a>
+                </div>
+              </div>
+
+              <!-- 性别 -->
+            </div>
+              <div style="margin: 20px 0;" class="flex fk">
+                  <!-- 左 -->
+                <a href="#" class="anhyc">
+                  <div class="anhycnr white">
+                    <div class="flex" style="height: 150px;">
+                      <div  class="flex" style="">
+                        <div>
+                          <h2 class="black" style="font-size: 21px;">隐私权和个性化</h2>
+                          <div class="black" style="font-size: 10px;padding-right: 30px;">查看您 Google 帐号中的数据，并选择保存哪些活动以用于个性化您的 Google 体验</div>
+                        </div>
+                    
+                    </div>
+                    <div class="flex" style="align-items: center;"><img style="width: 116px;height:116px;" src="./img/dataandpersonalization_icon_96x96_cdb6dff2e31ed6745ece4662231bfd48.png" alt=""></div>
+                      </div>
+                  </div>
+                  <div class="an white cp">
+                      <div class="white blue qdbj" style="height: 20px;">查看详情</div>
+                  </div>
+                </a>
+                <!-- 右 -->
+                <a href="#" class="anhyc">
+                  <div class="anhycnr white">
+                    <div class="flex" style="height: 150px;">
+                    <div  class="flex" style="">
+                      <div>
+                        <h2 class="black" style="font-size: 21px; ">让您的帐号安全无虞</h2>
+                        <div class="black" style="font-size: 10px;padding-right: 30px;">查看您 Google 帐号中的数据，并选择保存哪些活动以用于个性化您的 Google 体验</div>
+                      </div>
+                  
+                  </div>
+                  <div class="flex" style="align-items: center;"><img style="width: 116px;height:116px;" src="./img/securitycheckup_green_with_new_shield_96x96_26d2e3da755cc2e67209838c9cd08271.png" alt=""></div>
+                    </div>
+                    </div>
+                  <div class="an white cp">
+                      <div href="" class="white blue qdbj" style="height: 20px;">查看详情</div>
+                  </div>
+                </a>
+              </div>
+              <!-- 中间 -->
+              <div class="flex column">
+              <a href="#" class="bk1" style="width: 788px;padding: 25px;">
+                <div class="flex" style="height: 110px;justify-content: space-between;">
+                <div >
+                <h2 class="black" style="font-size: 20px;">有你的隐私建议捏</h2>
+                <div class="black" style="padding:8px 0 0;"><div style="font-size: 15px;">进行隐私设置检查，并选择适合您的设置</div></div>
+              </div>
+              <div class="flex" style="align-items: center;"><img src="./img/privacycheckup_scene_with_new_shield_316x112_6f524a4a87d89af8e0120501a6295875.png" alt=""></div>
+                </div>
+              </a>
+              <a href="#" class="bk2 cp" style="width: 788px;padding:25px;">
+                <div class="blue qdbj" style="height: 20px;">查看详情</div>
+              </a>
+            </div>
+            <!-- 下面 -->
+            <div style="margin: 30px 0;" class="flex column bk3">
+            <div style="width: 839px; padding: 25px 0 0px 0px;">
+              <div style="padding: 10px 24px 8px;">
+                <div><h2 style="margin: 0;">想要了解其他内容？</h2></div>
+              </div>
+              <div class="flex cp" style="padding-left: 20px;">
+              <a href="#" class="flex bk4 cp" style="width:839px;padding:15px 24px 16px 0">
+                <div class="flex" style="align-items: center;">
+                  <img class="mgr" style="width: 24px; height: 24px;" src="./img/search.png" alt="">
+                  <div class="black" style="width: 750px;">搜索 Google 账号</div>
+                  <span class="black">></span>
+                </div>
+              </a>
+            </div>
+            <div class="flex cp1" style="padding-left: 20px;">
+              <a href="#" class="flex bk4" style="width:839px;padding:15px 24px 16px 0px">
+                <div class="flex" style="align-items: center;">
+                  <img class="mgr" style="width: 24px; height: 24px;" src="./img/疑问.svg" alt="">
+                  <div class="black" style="width: 750px;">查看帮助选项</div>
+                  <span class="black" >></span>
+                </div>
+              </a>
+            </div>
+            </div>
+            <!-- 按钮 -->    
+            <div class="flex cp bk8" style="padding-left: 20px;">  
+            <a href="#" class="flex" style="width: 813px; padding: 20px 0;">
+                <div class="flex" style="align-items: center;">
+                  <img class="mgr" style="width: 24px; height: 24px;" src="./img/对话信息.svg" alt="">
+                  <div class="black" style="width: 750px;">发送反馈</div>
+                  <span class="black">></span>
+              </div>
+            </a>
+          </div>   
+          </div>
+          <div class="flex column">
+          <div class="flex" style="width: 788px;padding:24px;">
+          <div>只有您本人可以查看您的设置。您可能还想查看 Google 地图、Google 搜索或您最常使用的其他 Google 服务的设置。Google 会确保您数据的隐私性和安全性。<a class="blue" href="#">了解详细</a> </div>
+          <img style="width:43px;height: 43px;" src="./img/privacypolicy_icon_with_new_shield_48x48_3426417659bc0ba9f7866eead0c3e857.png" alt="">
+          </div>
+          </div>
+            </div>
+          </div>
+        </div>
+        
         
         <!-- 右区 -->
         <!-- <div style="flex: 1;" class="flex column "></div> -->

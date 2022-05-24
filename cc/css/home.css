@@ -140,4 +140,20 @@ body{
     display: block;
 
 }
-
+.bk12{
+    border-bottom: #999 1px solid;
+}
+.bk13{
+    border: 1px solid rgb(223, 212, 212);
+}
+.bk14{
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+}
+.mgl3{
+    margin-left: 20px;   
+}
+.bk15{
+    border-left: 1px solid rgb(223, 212, 212);
+    border-right: 1px solid rgb(223, 212, 212);
+}
