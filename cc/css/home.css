@@ -52,12 +52,12 @@ body{
 .fk{
     justify-content: space-between;
 }
-/* .anhyc{
+.anhyc{
     width: 400px;
-    height: 390px;
-} */
+    height: 230px;
+}
 .anhycnr{
-    height: 330px;
+    height: 150px;
     padding: 0px 24px 16px;
     border-top-left-radius: 1em;
     border-top-right-radius: 1em;
