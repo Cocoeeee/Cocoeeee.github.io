@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+@media(max-width:900px){
+    .zhuqu{
+        flex-direction: column;
+    }
+    .zhuqu .youqu{
+        margin-top: 10px;
+    }
+}
+.head{
+    width: 100%;
+    height: 8vh;
+    position: fixed;
+    background-color: #fff;
+    box-shadow: 1px 1px 10px #23232e;
+    margin-bottom: 20px;
+}
+.navbar{
+    position: relative;
+    max-width: 1300px;
+    height: 8vh;
+    margin: 0 auto;
+    
+}
+.logo{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+.logo a{
+    color: #23232e;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.logo a:hover{
+    opacity: 0.7;
+}
+.topul{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    list-style: none;
+}
+.topul li{
+    letter-spacing: 2px;
+    margin-left: 32px;
+    font-size: 17px;
+}
+.topul li a{
+    text-decoration: none;
+    color: #23232e;
+    transition: 0.3s;
+}
+.topul li a:hover{
+    opacity: 0.7;
+}
+.d1{
+    width: 100%;
+    height: 8vh;
+    margin-bottom: 20px;
+}
+.mainnr{
+    width: 1300px;
+    height: 600px;
+    overflow: auto;
+    margin: 0 auto;
+}
+.mainnr::-webkit-scrollbar{
+    display: none;
+}
+.zhuqu{
+    display: flex;
+    justify-content: space-between;
+}
+.zhuqu .zuoqu{
+    display: flex;
+    width: 630px;
+    height: 600px;
+    border-radius: 8px;
+    flex-direction: column;
+}
+.bt{
+    padding: 10px;
+    height: 30px;
+    border-radius: 8px 8px 0 0;
+    border: 1px solid  rgb(209, 197, 197);
+}
+.zhuqu .youqu{
+    display: flex;
+    width: 630px;
+    height: 600px;
+    border-radius: 8px;
+    flex-direction: column;
+    border: 1px solid red;
+}
+.lj{
+    display: flex;
+    height: 120px;
+    padding: 10px;
+    font-size: 20px;
+    border-bottom: 1px solid rgb(209, 197, 197);
+    border-left: 1px solid rgb(209, 197, 197);
+    border-right: 1px solid rgb(209, 197, 197);
+}
+.lj a{ 
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    text-decoration: none;
+    color: #23232e;
+}

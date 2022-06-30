@@ -372,6 +372,7 @@ html{
     margin-bottom: 10px;
 }
 .context-bottom span{
+    position: relative;
     transition: all 0.3s;
 }
 .context-bottom span:hover{
