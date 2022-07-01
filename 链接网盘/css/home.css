@@ -21,7 +21,7 @@ body::-webkit-scrollbar{
     justify-content: space-between;
     width: 81.25rem;
     height: 8vh;
-    
+    margin: 0 auto;
 }
 .logo{
     font-size: 1.5rem;
@@ -106,8 +106,7 @@ body::-webkit-scrollbar{
 }
 @media(max-width:900px){
     .head{
-        width: 25rem;
-        margin-right: 0;
+        width: 100%;
     }
     .navbar{
         width: 25rem;
