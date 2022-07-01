@@ -2,12 +2,15 @@
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+    transition: 0.3s;
 }
 body::-webkit-scrollbar{
     display: none;
 }
-
 .head{
+    position: fixed;
+    z-index: 1;
     display: flex;
     width: 100%;
     height: 8vh;
@@ -54,20 +57,31 @@ body::-webkit-scrollbar{
 .topul li a:hover{
     opacity: 0.7;
 }
+.d1{
+    width: 100%;
+    height: 8vh;
+}
+.main{
+    margin-top: 1.25rem;
+}
 .mainnr{
     width: 81.25rem;
-    height: 37.5rem;
-    overflow: auto;
+    height: 75rem;
     margin: 0 auto;
 }
 .mainnr::-webkit-scrollbar{
     display: none;
 }
-.zhuqu{
+.phone{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.25rem;
+}
+.win{
     display: flex;
     justify-content: space-between;
 }
-.zhuqu .zuoqu{
+.zuoqu{
     display: flex;
     width: 39.375rem;
     height: 37.5rem;
@@ -80,7 +94,7 @@ body::-webkit-scrollbar{
     border-radius: .5rem .5rem 0 0;
     border: 1px solid  rgb(209, 197, 197);
 }
-.zhuqu .youqu{
+.youqu{
     display: flex;
     width: 39.375rem;
     height: 37.5rem;
@@ -88,6 +102,7 @@ body::-webkit-scrollbar{
     flex-direction: column;
 }
 .lj{
+    position: relative;
     display: flex;
     height: 7.5rem;
     padding: .625rem;
@@ -104,6 +119,42 @@ body::-webkit-scrollbar{
     text-decoration: none;
     color: #23232e;
 }
+
+.lj .xx{
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background: rgba(146, 143, 143, 0.7);
+    top: 0;
+    left: 0;
+    /* transform: translateX(0); */
+}
+.xx .xxul{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+}
+.xxul li{
+    display: flex;
+    letter-spacing: 3px;
+    margin-left: 32px;
+    width: 50%;
+    align-items: center;
+}
+.xx .xxul li a{
+    color: #fff;
+    display: none;
+    text-align: center;
+
+    line-height:  6.875rem;
+}
+.lj:hover .xx{
+    width: 100%;
+}
+.xxul:hover li a{
+    display: block;
+}
 @media(max-width:900px){
     .head{
         width: 100%;
@@ -119,19 +170,26 @@ body::-webkit-scrollbar{
     .mainnr{
         width: 25rem;
     }
-    .zhuqu{
+    .phone{
         width: 25rem;
         flex-direction: column;
         align-items: center;   
      }
-     .zhuqu .zuoqu {
+     .win{
+        width: 25rem;
+        flex-direction: column;
+        align-items: center;
+     }
+    .zuoqu {
         width: 21.875rem;
         text-align: center;
      }
-    .zhuqu .youqu{
+    .youqu{
         width: 21.875rem;
         text-align: center;
         margin-top: .625rem;
     }
-
+    .lj a{
+        justify-content: center;
+    }
 }
