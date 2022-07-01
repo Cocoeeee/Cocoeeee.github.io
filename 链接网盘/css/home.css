@@ -6,25 +6,18 @@
 body::-webkit-scrollbar{
     display: none;
 }
-@media(max-width:900px){
-    .zhuqu{
-        flex-direction: column;
-    }
-    .zhuqu .youqu{
-        margin-top: 10px;
-    }
-}
+
 .head{
     width: 100%;
     height: 8vh;
     position: fixed;
     background-color: #fff;
-    box-shadow: 1px 1px 10px #23232e;
-    margin-bottom: 20px;
+    box-shadow: .0625rem .0625rem .625rem #23232e;
+    margin-bottom: 1.25rem;
 }
 .navbar{
     position: relative;
-    max-width: 1300px;
+    width: 81.25rem;
     height: 8vh;
     margin: 0 auto;
     
@@ -32,11 +25,11 @@ body::-webkit-scrollbar{
 .logo{
     position: absolute;
     top: 50%;
-    left: 10px;
+    left: .625rem;
     transform: translateY(-50%);
-    font-size: 24px;
+    font-size: 1.5rem;
     text-transform: uppercase;
-    letter-spacing: 4px;
+    letter-spacing: .25rem;
 }
 .logo a{
     color: #23232e;
@@ -48,16 +41,16 @@ body::-webkit-scrollbar{
 }
 .topul{
     position: absolute;
-    right: 10px;
+    right: .625rem;
     top: 50%;
     transform: translateY(-50%);
     display: flex;
     list-style: none;
 }
 .topul li{
-    letter-spacing: 2px;
-    margin-left: 32px;
-    font-size: 17px;
+    letter-spacing: .125rem;
+    margin-left: 2rem;
+    font-size: 1.0625rem;
 }
 .topul li a{
     text-decoration: none;
@@ -70,11 +63,11 @@ body::-webkit-scrollbar{
 .d1{
     width: 100%;
     height: 8vh;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 .mainnr{
-    width: 1300px;
-    height: 600px;
+    width: 81.25rem;
+    height: 37.5rem;
     overflow: auto;
     margin: 0 auto;
 }
@@ -87,33 +80,32 @@ body::-webkit-scrollbar{
 }
 .zhuqu .zuoqu{
     display: flex;
-    width: 630px;
-    height: 600px;
-    border-radius: 8px;
+    width: 39.375rem;
+    height: 37.5rem;
+    border-radius: .5rem;
     flex-direction: column;
 }
 .bt{
-    padding: 10px;
-    height: 30px;
-    border-radius: 8px 8px 0 0;
+    padding: .625rem;
+    height: 1.875rem;
+    border-radius: .5rem .5rem 0 0;
     border: 1px solid  rgb(209, 197, 197);
 }
 .zhuqu .youqu{
     display: flex;
-    width: 630px;
-    height: 600px;
+    width: 39.375rem;
+    height: 37.5rem;
     border-radius: 8px;
     flex-direction: column;
-    border: 1px solid red;
 }
 .lj{
     display: flex;
-    height: 120px;
-    padding: 10px;
-    font-size: 20px;
-    border-bottom: 1px solid rgb(209, 197, 197);
-    border-left: 1px solid rgb(209, 197, 197);
-    border-right: 1px solid rgb(209, 197, 197);
+    height: 7.5rem;
+    padding: .625rem;
+    font-size: 1.25rem;
+    border-bottom: .0625rem solid rgb(209, 197, 197);
+    border-left: .0625rem solid rgb(209, 197, 197);
+    border-right: .0625rem solid rgb(209, 197, 197);
 }
 .lj a{ 
     display: flex;
@@ -122,4 +114,31 @@ body::-webkit-scrollbar{
     align-items: center;
     text-decoration: none;
     color: #23232e;
+}
+@media(max-width:900px){
+    .head{
+        width: 25rem;
+    }
+    .navbar{
+        width: 25rem;
+    }
+    .navbar .logo{
+        left: 45%;
+    }
+    .navbar .topul{
+        display: none;
+    }
+    .zhuqu{
+        width: 25rem;
+        flex-direction: column;
+        align-items: center;   
+     }
+     .zhuqu .zuoqu {
+        width: 21.875rem;
+        text-align: center;
+     }
+    .zhuqu .youqu{
+        margin-top: .625rem;
+    }
+
 }
