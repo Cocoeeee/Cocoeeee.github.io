@@ -1,80 +1,135 @@
 <!DOCTYPE html>
-<html lang="zh-cn">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-caleble=no"> 
-    <title>Home</title>
-    <link rel="stylesheet" href="./链接网盘/css/home.css">
-    <link rel="stylesheet" href="./链接网盘/js/home.js">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
 </head>
 <body>
-    <div class="head">
-        <nav class="navbar">
-            <div class="logo"><a href="#">home</a></div>
-            <ul class="topul">
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">More</a></li>
-                <li><a href="#">About</a></li>
-            </ul>
-        </nav>
-    </div>
-    <div class="d1"></div>
-    <div class="main">
-        <div class="mainnr">
-            <div class="zhuqu">
-                <div class="phone">
-                    <div class="zuoqu">
-                        <div class="bt">
-                            <h2>Magisk Module</h2>
-                        </div>
-                        <div class="lj"><a href="#">Shamiko</a>
-                            <div class="xx">
-                                <ul class="xxul">
-                                    <li><a style="border-right: .0625rem solid rgb(209, 195, 195);" href="#">官网</a></li>
-                                    <li><a href="#">下载</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="lj"><a href="#">Zygisk-Losposed</a></div>
-                        <div class="lj"><a href="#">Not included</a></div>
-                        <div class="lj"><a href="#">Not included</a></div>
-                        <div style="border-radius: 0 0 .5rem .5rem;" class="lj"><a href="#">Not included</a></div>
-                    </div>
-                    <div class="youqu">
-                        <div class="bt">
-                            <h2>Xposed Module</h2>
-                        </div>
-                        <div class="lj"><a href="#">QQ Module</a></div>
-                        <div class="lj"><a href="#">WeChat Module</a></div>
-                        <div class="lj"><a href="#">Not included</a></div>
-                        <div class="lj"><a href="#">Not included</a></div>
-                        <div style="border-radius: 0 0 .5rem .5rem;" class="lj"><a href="#">Not included</a></div>
-                    </div>
-                </div>
-                <div class="win">
-                    <div class="zuoqu">
-                        <div class="bt">
-                            <h2>Magisk Module</h2>
-                        </div>
-                        <div class="lj"><a href="#">Shamiko</a></div>
-                        <div class="lj"><a href="#">Zygisk-Losposed</a></div>
-                        <div class="lj"><a href="#">Not included</a></div>
-                        <div class="lj"><a href="#">Not included</a></div>
-                        <div style="border-radius: 0 0 .5rem .5rem;" class="lj"><a href="#">Not included</a></div>
-                    </div>
-                    <div class="youqu">
-                        <div class="bt">
-                            <h2>Xposed Module</h2>
-                        </div>
-                        <div class="lj"><a href="#">QQ Module</a></div>
-                        <div class="lj"><a href="#">WeChat Module</a></div>
-                        <div class="lj"><a href="#">Not included</a></div>
-                        <div class="lj"><a href="#">Not included</a></div>
-                        <div style="border-radius: 0 0 .5rem .5rem;" class="lj"><a href="#">Not included</a></div>
-                    </div>
-                </div>
-            </div>
+  <div class="top">
+
+  </div>
+    <nav class="navbox">
+      <ul class="nav justify-content-end">
+        <li class="nav-logo">
+          <a class="navbar-brand" href="#">
+            <img src="./img/logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            logo
+          </a>
+        </li>
+        <li class="nav-item nav-box">
+          <a class="nav-link active" aria-current="page" href="#">新闻</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">产品</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">配件</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="#">博客</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="#">关于</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="banner">
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/3.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/2.jpg" class="d-block w-100" alt="...">
+          </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </div>
+    <div class="banner2">
+      <ul class="cards-box">
+        <li class="card-item card-left">
+          <img src="./img/5.jpg" class="card-img" alt="">
+          <button type="button" class="btn-outline-secondary">Secondary</button>
+        </li>
+        <li class="card-item">
+          <img src="./img/logo.png" class="card-img" alt="">
+          <button type="button" class="secondary1 btn-outline-secondary">Secondary</button>
+        </li>
+      </ul>
+    </div>
+    <div class="featured">
+      <div class="heading">
+        <h2><b>选&nbsp;&nbsp;购</b></h2>
+        <button class="products">
+          想要更多
+        </button>
+      </div>
+      <ul class="featured-box">
+        <li class="featured-item">
+          <a href="#" class="featured-a bgimg1">
+            <div class="mask"></div>
+            <h3 class="featured-text" >推&nbsp;荐</h3>
+            <div class="horizontalbar"></div>
+          </a>
+        </li>
+        <li class="featured-item featured-lr">
+          <a href="#" class="featured-a bgimg2">
+            <div class="mask"></div>
+            <h3 class="featured-text">滑&nbsp;板</h3>
+          </a>
+        </li>
+        <li class="featured-item featured-lr">
+          <a href="#" class="featured-a bgimg3">
+            <div class="mask"></div>
+            <h3 class="featured-text">长&nbsp;板</h3>
+          </a>
+        </li>
+        <li class="featured-item">
+          <a href="#" class="featured-a bgimg4">
+            <div class="mask"></div>
+            <h3 class="featured-text">配&nbsp;件</h3>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="segmentation">
+
+    </div>
+    <div class="video-box">
+      <div class="content">
+        <div class="player">
+          <video src="./video/video1.mp4">
+          </video>
+          <div class="control">
+            <div class="fa fa-play play_pause"></div>
+            <div>
+              <span class="progress"></span>
+            </div>
+            <div class="timer">
+              <span class="progress_timer">00:00:00</span>/
+              <span class="duration_timer">00:00:00</span>
+            </div>
+            <div class="fa fa-expand expand"></div>
+          </div>
+        </div>
+      </div>
+      </div>
 </body>
+<script src="./js/index.js"></script>
 </html>
