@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>自定义视频控制条</title>
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+	margin: 0;
+	padding: 0;
+}
+/* 去掉全屏时显示的自带控制条 */
+video::-webkit-media-controls{
+    display:none !important;
+}
+.wrap h3{
+	text-align: center;
+	height: 100px;
+	line-height: 100px;
+}
+.player{
+	width: 720px;
+	height: 400px;
+	margin: 0 auto;
+	position: relative;
+
+}
+.player video{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 100%;
+}
+.player .control{
+	position: absolute;
+	background: rgba(8, 8, 8, 0.3);
+	width: 680px;
+	height: 40px;
+	border-radius: 5px;
+	left: 50%;
+	bottom: 10px;
+	transform: translateX(-50%);
+}
+.player .control div{
+	display: inline-block;
+	line-height: 40px;
+	margin-left: 10px;
+	font-size: 18px;
+	color: #fff;
+}
+.player .control .play_pause,.player .control .expand{
+	color: rgb(15, 15, 14);
+}
+.player .control div:nth-child(2){
+	width: 460px;
+	height: 10px;
+	background-color: rgba(255,255,255,0.3);
+	border-radius: 5px;
+	overflow: hidden;
+}
+.player .control .progress{
+	display: block;
+	width: 10%;
+	height: 10px;
+	background: #191818;
+}
+.player .control .timer{
+	font-size: 12px;
+}
+    </style>
+</head>
+<body>
+	<div class="wrap">
+		<h3>视频控制案例</h3>
+		<div class="content">
+			<div class="player">
+				<video src="./video/video1.mp4">
+				您的浏览器不支持 video 标签。
+				</video>
+				<div class="control">
+					<div class="fa fa-play play_pause"></div>
+					<div>
+						<span class="progress"></span>
+					</div>
+					<div class="timer">
+						<span class="progress_timer">00:00:00</span>/
+						<span class="duration_timer">00:00:00</span>
+					</div>
+					<div class="fa fa-expand expand"></div>
+				</div>
+			</div>
+		</div>
+	</div>            
+</body>
+<script>
+
+    // 获取元素
+var videoObj = document.querySelector('video')
+var playBtn = document.querySelector('.play_pause')
+// 0.实现播放按钮
+// 1.获取所需要的元素
+// 2.点击播放按钮控制视频的播放
+// 3.切换为暂停按钮
+// 4.点击暂停按钮实现暂停
+// 5.实现切换
+playBtn.addEventListener('click', function(){
+	if(videoObj.paused){
+		// 如果视频处于播放状态
+		videoObj.play()
+		this.classList.remove('fa-play')
+		this.classList.add('fa-pause')
+	}else{
+		videoObj.pause()
+		this.classList.add('fa-play')
+		this.classList.remove('fa-pause')
+	}
+})
+var progressTimer = document.querySelector('.progress_timer')
+var durationTimer = document.querySelector('.duration_timer')
+// 0.实现时间
+// 1.获取所需的元素
+// 2.时间格式为：hh:mm:ss
+// 3.获取总时间，并格式化
+// 4.获取当前视频时间，并格式化
+// 5.渲染到页面
+let {totalT,presentT} = {totalT:0,presentT:0}
+videoObj.addEventListener('canplay',function(){
+	totalT = this.duration
+	var videoDuration = formatTime(totalT)
+	durationTimer.innerHTML = videoDuration
+})
+
+videoObj.addEventListener('timeupdate',function(){
+	presentT = this.currentTime
+	var videoCurrent = formatTime(presentT)
+	progressTimer.innerHTML = videoCurrent
+})
+function formatTime(t){
+	var h = parseInt(t/3600)
+	h = h<10?'0'+h:h 
+	var m = parseInt(t%3600/60)
+	m = m<10?'0'+m:m
+	var s = parseInt(t%60)
+	s = s<10?'0'+s:s
+	return h+':'+m+':'+s
+    var progress = document.querySelector('.progress')
+//0.实现进度条 
+//1.获取所需元素
+//2.根据时间来实现百分比
+var percent = presentT/totalT*100
+progress.style.width = percent+'%'
+var expand = document.querySelector('.expand')
+expand.addEventListener('click',function(){
+	videoObj.webkitRequestFullScreen()
+})
+}
+</script>
+</html>

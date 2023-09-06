@@ -1,0 +1,267 @@
+*{
+    padding: 0;
+    margin: 0;
+    transition: all 0.5s;
+    /* overflow-y: hidden; */
+    text-decoration: none;
+    list-style: none;
+}
+.top{
+    width: 100%;
+    height: 5px;
+    background: #000;
+}
+.navbar{
+    width: 100%;
+    height: 100px;
+
+}
+.nav{
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+    position: relative;
+}
+.nav .nav-logo{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: 40px 0;
+}
+.nav .nav-item{
+    width: 80px;
+    height: 50px;
+    margin: 40px 0;
+    text-align: center;
+    line-height: 50px;
+    background: #000;
+}
+.nav-box{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.nav-link{
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    color: white;
+}
+.banner{
+    width: 1300;
+    height: 500px;
+    box-sizing: border-box;
+    margin-bottom: 275px;
+}
+.d-block{
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+.banner2{
+    width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+
+}
+.cards-box{
+    width: 1200px;
+    height: 500px;
+    padding: 0;
+}
+.cards-box .card-item{
+    width: 592.5px;
+    height: 500px;
+    display: inline-block;
+    background: #b0acac;
+    position: relative;
+}
+.card-item .btn-outline-secondary{
+    position: absolute;
+    width: 250px;
+    height: 50px;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: #000;
+    background: white;
+    border: 2px solid #000;
+}
+.card-item .btn-outline-secondary:hover{
+    background: #000;
+    color: white;
+    border: 2px solid #ffffff;
+}
+.card-left{
+    margin-right: 10px;
+}
+.card-img{
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+.featured{
+    width: 1200px;
+    height: 400px;
+    margin: 30px auto 30px;
+    /* border: 1px solid red; */
+}
+.featured .heading{
+    width: 100%;
+    height: 100px;
+    font-family: 微软雅黑;
+    /* margin: 0px 0 30px; */
+    text-align: center;
+    position: relative;
+}
+.heading h2{
+    margin: 0;
+    width: auto;
+    height: 100px;
+    line-height: 55px;
+}
+.heading .products{
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    bottom: 15px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-size: 10px;
+    background: white;
+    color: #000;
+    border: 2px solid #000;
+}
+.heading .products:hover{
+    background: #000;
+    color: white;
+    border: 2px solid #fff;
+}
+.featured .featured-box{
+    width: 1200px;
+    height: 330px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.featured-box .featured-item{
+    width: 290px;
+    height: 100%;
+    display: flex;
+    background-color: #121212;
+}
+.featured-a{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.bgimg1{
+    background-image: url(../img/6.jpg);
+}
+.bgimg2{
+    background-image: url(../img/6.jpg);
+}
+.bgimg3{
+    background-image: url(../img/6.jpg);
+}
+.bgimg4{
+    background-image: url(../img/6.jpg);
+}
+.featured-a .mask{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgb(207, 205, 205, 0.3); 
+    opacity: 0;
+    visibility: hidden;
+}
+.featured-a .featured-text{
+    width: 100px;
+    height: 50px;
+    bottom: 35px;
+    left: 20px;
+    position: absolute;
+    margin: 0;
+    text-align: center;
+    line-height: 50px;
+    color: white;font-size: 15px;
+    overflow: hidden;
+}
+
+.featured-a:hover .featured-text{
+    opacity: 1;
+    height: 70px;
+    font-size: 30px;
+    animation-play-state: paused;
+
+}
+.featured-a:hover .mask{
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
+.segmentation{
+    width: 1200px;
+    height: 100px;
+}
+.video-box{
+    width: 1200px;
+    height: 600px;
+    margin: auto;
+}
+video::-webkit-media-controls-enclosure{ 
+    display: none !important;
+}
+.player{
+    width: 1200px;
+    height: 600px;
+    margin: 0 auto;
+    position: relative;
+}
+.player video{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 500px;
+}
+.player .control{
+    position: absolute;
+    background-color: rgb(8, 8, 8,0.3);
+    width: 1200px;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.player .control div{
+    display: inline-block;
+    line-height: 40px;
+    margin-left: 10px;
+    font-size: 18px;
+    color: #000;
+}
+.player .control .play_pause,.player .control .expand{
+	color: rgb(15, 15, 14);
+}
+.player .control div:nth-child(2){
+	width: 970px;
+	height: 10px;
+	background-color: rgba(255,255,255,0.3);
+	border-radius: 5px;
+	overflow: hidden;
+}
+.player .control .progress{
+	display: block;
+	width: 0%;
+	height: 10px;
+	background: #191818;
+}
+.player .control .timer{
+	font-size: 15px;
+}
