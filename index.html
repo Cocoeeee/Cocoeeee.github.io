@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="./css/index.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
@@ -13,53 +13,48 @@
   <div class="top">
 
   </div>
-    <nav class="navbox">
-      <ul class="nav justify-content-end">
-        <li class="nav-logo">
-          <a class="navbar-brand" href="#">
-            <img src="./img/logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-            logo
-          </a>
-        </li>
-        <li class="nav-item nav-box">
-          <a class="nav-link active" aria-current="page" href="#">新闻</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">产品</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">配件</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="#">博客</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="#">关于</a>
-        </li>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="./img/logo2.png" class="d-block" alt="">
+      <p style="color: aliceblue;">logo</p>
+    </div>
+    <ul class="navbarbox">
+      <li class="navbar-item">
+        <a href="#">滑&nbsp;板</a>
+      </li>
+      <li class="navbar-item">
+        <a href="#">配&nbsp;件</a>
+      </li>
+      <li class="navbar-item">
+        <a href="#">定&nbsp;制</a>
+      </li>
+      <li class="navbar-item">
+        <a href="#">服&nbsp;饰</a>
+      </li>
+      <li class="navbar-item">
+        <a href="#">海&nbsp;报</a>
+      </li>
+
+    </ul>
+    <div class="navbarright">
+      <ul>
+        <li><a href="#"><img src="./img/user.svg" alt=""></a></li>
+        <li><a href="#"><img src="./img/search.svg" alt=""></a></li>
+        <li><a href="#"><img src="./img/shopping .svg" alt=""></a></li>
       </ul>
-    </nav>
+    </div>
+  </nav>
     <div class="banner">
-      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="./img/3.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="./img/1.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="./img/2.jpg" class="d-block w-100" alt="...">
-          </div>
+      <div class="bannervideo">
+        <video src="./video/pexels-koolshooters-9724311_(1080p).mp4" muted autoplay loop></video>
+        <div class="bannermask">
+          <p class="video-text">"以速度和技巧绽放创造力"</p>
+          <a href="#" class="video-btn">mars</a>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
+    </div>
+    <div class="segmentation">
+
     </div>
     <div class="banner2">
       <ul class="cards-box">
@@ -68,16 +63,19 @@
           <button type="button" class="btn-outline-secondary">Secondary</button>
         </li>
         <li class="card-item">
-          <img src="./img/logo.png" class="card-img" alt="">
+          <img src="./img/7.jpg" class="card-img" alt="">
           <button type="button" class="secondary1 btn-outline-secondary">Secondary</button>
         </li>
       </ul>
+    </div>
+    <div class="segmentation">
+
     </div>
     <div class="featured">
       <div class="heading">
         <h2><b>选&nbsp;&nbsp;购</b></h2>
         <button class="products">
-          想要更多
+          查看更多商品
         </button>
       </div>
       <ul class="featured-box">
@@ -114,22 +112,68 @@
     <div class="video-box">
       <div class="content">
         <div class="player">
-          <video src="./video/video1.mp4">
+          <video src="./video/video1.mp4" controls>
           </video>
-          <div class="control">
-            <div class="fa fa-play play_pause"></div>
-            <div>
-              <span class="progress"></span>
-            </div>
-            <div class="timer">
-              <span class="progress_timer">00:00:00</span>/
-              <span class="duration_timer">00:00:00</span>
-            </div>
-            <div class="fa fa-expand expand"></div>
-          </div>
         </div>
       </div>
       </div>
+      <div class="segmentation">
+
+      </div>
+      <div class="prt_imgbox">
+        <div class="prt_img">
+          <img src="./img/prtimg.png" alt="">
+        </div>
+      </div>
+      <div class="about">
+        <div class="about_box">
+          <span class="about-ul">
+            <ul class="abouttext-logo">
+              <li class="about-logo">
+                <img src="./img/logo.png" alt="" class="d-block">
+                <div class="about-logo-text">about-logo</div>
+              </li>
+              <li class="about-loin "><a href="#">登&nbsp;录</a></li>
+              <li class="about-loin"><a href="#">注&nbsp;册</a></li>
+            </ul>
+          </span>
+          <span class="about-ul">
+            <ul class="abouttext-box">
+              <div class="about-bar">帮&nbsp;助</div>
+              <li class="about-hp-at"><a href="#">量身打造您的滑板</a></li>
+              <li class="about-hp-at"><a href="#">订单、退货状态</a></li>
+              <li class="about-hp-at"><a href="#">您可能会遇到的问题</a></li>
+              <li class="about-hp-at"><a href="#">和我们取得联系</a></li>
+              <li class="about-hp-at"><a href="#">和我们合作</a></li>
+            </ul>
+          </span>
+          <span class="about-ul about-top">
+            <ul class="abouttext-box">
+              <div class="about-bar">关&nbsp;于</div>
+              <li class="about-hp-at"><a href="#">关于我们</a></li>
+              <li class="about-hp-at"><a href="#">加入我们</a></li>
+              <li class="about-hp-at"><a href="#">隐私政策</a></li>
+              <li class="about-hp-at"><a href="#">使用条款</a></li>
+            </ul>
+            <span class="about_top">
+              <a href="#">
+                <img class="d-block imghover" src="./img/about-top.svg" alt="">
+                <p><a href="#" class="ahover">返回顶部</a></p>
+              </a>
+            </span>
+          </span>
+        </div>
+        <div class="end">
+          <span>END</span>
+          <span>简体中文</span>
+          <div class="endtext">
+            <a href="#">隐私</a>
+            <div></div>
+            <p>© 2023,Skateboards</p>
+          </div>
+          </div>
+      </div>
+
 </body>
 <script src="./js/index.js"></script>
 </html>
