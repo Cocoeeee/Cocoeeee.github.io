@@ -76,8 +76,9 @@
         width: 100%;
         height: 100%;
     }
-    .featured-a .featured-text{
-
+    .video-box .player{
+        width: 100%;
+        height: 300px;
     }
 }
 @media screen and (max-width: 1024px) {
