@@ -257,6 +257,7 @@ html{
     width: 100%;
     height: 100%;
     display: flex;
+    background-image: url(../img/skateboard/tj-1024w.jpg);
 }
 /* .featured-a .mask{
     width: 100%;
@@ -426,8 +427,9 @@ html{
     margin-top: 20px;
 }
 .dividing-about{
-    width: 0.7px;
-    height: 24px;
+    width: 5px;
+    height: 5px;
+    border-radius: 10px;
     background: white;
     margin: 0 10px 0;
     display: none;
@@ -466,7 +468,7 @@ html{
     height: 50px;
     padding: 10px;
     display: flex;
-    margin-left: auto;
+    margin-left: 1050px;
 }
 .endtext a{
     color: white;

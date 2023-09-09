@@ -3,40 +3,15 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<style>
-		.dropdownContainer {
-  position: relative;
-}
-
-.dropdownContent {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  transform: translateY(0);
-  transition: transform 0.3s ease;
-}
-
-.dropdownContainer.open .dropdownContent {
-  transform: translateY(100%);
-}
-	</style>
 	<title>Document</title>
+	<style>
+	</style>
 </head>
 <body>
-	<div class="dropdownContainer">
-		<button id="dropdownBtn">点击我</button>
-		<div id="dropdownContent">
-		  <p>下拉内容</p>
-		</div>
-	  </div>
+	<picture>
+		<source media="(max-width: 799px)" srcset="tj-800w.jpg" />
+		<source media="(min-width: 800px)" srcset="tj-1024w.jpg" />
+		<img src="./img/skateboard/tj-800w.jpg" alt="Chris standing up holding his daughter Elva" />
+	  </picture>
 </body>
-<script>
-var dropdownButton = document.getElementById("dropdownBtn");
-var dropdownContainer = document.querySelector(".dropdownContainer");
-
-dropdownButton.addEventListener("click", function() {
-  dropdownContainer.classList.toggle("open");
-});
-</script>
 </html>
