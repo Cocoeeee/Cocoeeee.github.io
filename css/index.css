@@ -346,7 +346,7 @@ html{
 }
 .about{
     width: 100%;
-    height: 400px;
+    height: 300px;
     background: #000;
     border-top: 3px solid white;
     padding-top: 50px;
@@ -381,8 +381,9 @@ html{
 .about-loin{
     margin-top: 10px;
     width: 200px;
-    height: 50px;
+    height: 90px;
     display: flex;
+    flex-direction: column;
 }
 .about-loin a{
     text-decoration: none;
@@ -393,6 +394,7 @@ html{
     border: 1px solid white;
     justify-content: center;
     align-items: center;
+    margin-top: 10px;
 }
 .about-loin a:hover{
     color: #e50505;
@@ -410,6 +412,29 @@ html{
     color: white;
     text-decoration: none;
 }
+.at-column{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 30px;
+    margin-top: 10px;
+}
+.at-column a{
+    color: white;
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin-top: 20px;
+}
+.dividing-about{
+    width: 0.7px;
+    height: 24px;
+    background: white;
+    margin: 0 10px 0;
+    display: none;
+}
+.at-column a:hover{
+    color: #e50505;
+}
 .about-hp-at a{
     text-decoration: none;
     color: white;
@@ -418,15 +443,15 @@ html{
 }
 .about-hp-at a:hover{
     color: #e50505;
-    border-bottom: 1px solid #e50505;
 }
 .end{
     display: flex;
-    width: 1300px;
+    width: 100%;
     height: 50px;
     margin: auto;
-    padding: 10px;
-    position: relative;
+    padding-top: 10px;
+    /* position: relative; */
+    /* display: none; */
 }
 .end span{
     width: 80px;
@@ -438,33 +463,29 @@ html{
     margin-top: 10px;
 }
 .end .endtext{
-    position: absolute;
     height: 50px;
-    right: 0;
     padding: 10px;
     display: flex;
+    margin-left: auto;
 }
 .endtext a{
     color: white;
     text-decoration: none;
-    width: 50px;
     height: 20px;
     font-size: 13px;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
 }
 .endtext a:hover{
     color: #e50505;
 }
-.endtext div{
+.endtext .dividing{
     width: 1px;
     height: 20px;
     background: white;
     margin: 0 10px;
 }
 .endtext p{
-    width: 170px;
     height: 20px;
     color: white;
     display: flex;

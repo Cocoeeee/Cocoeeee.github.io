@@ -1,10 +1,11 @@
 .barnav-menu{
     width: 10%;
     margin-right: 20px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 .barnav-menu .menu_btn{
     background: none;
+    border: none;
 }
 @media screen and (max-width: 768px){
     .barnav-menu{
@@ -90,6 +91,113 @@
     .video-box .player{
         width: 100%;
         height: 100%;
+    }
+    .about_box{
+        width: 100%;
+        height: 620px;
+        flex-direction: column;
+    }
+    .about-ul{
+        width: 100%;
+    }
+    .abouttext-logo{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    .about-logo{
+        width: 180px;
+        height: 90px;
+        margin: 10px 0 0;
+        padding-right: 10px;
+    }
+    .imgleft{
+        margin-left: 10px;
+    }
+    .about-loin{
+        width: 150px;
+        height: 90px;
+        margin-left: 40px;
+    }
+    .about-help{
+        padding-bottom: 20px;
+        justify-content: center;
+        /* border-bottom: 2px solid white; */
+    }
+    .about-help-box{
+        width: 300px;
+    }
+    .help-bar{
+        font-size: 2rem;
+        text-align: center;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #e50505;
+    }
+    .about-hp-at{
+        width: 100%;
+    }
+    .about-hp-at a{
+        width: 100%;
+        text-align: center;
+        font-size: 1.1rem;
+    }
+    .about_top{
+        display: none;
+    }
+    .about-ab{
+        justify-content: center
+    }
+    .about-ab-box{
+        width: 300px;
+    }
+    .at-column{
+        width: 100%;
+        height: 30px;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0 !important;
+    }
+    .about-menu-text{
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 12px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #e50505;
+    }
+    .dividing-about{
+        display: block;
+    }
+    .at-column a{
+        margin: 0 !important;
+        font-size: 0.9rem;
+    }
+    .end{
+        height: 150px;
+        padding: 0;
+        flex-direction: column;
+    }
+    .end span{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin: 10px 0 0 !important;
+    }
+    .end .endtext{
+        width: 100%;       
+        padding: 0;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .endtext .dividing{
+        display: none;
+    }
+    .endtext a{
+        justify-content: center;
+    }
+    .endtext p{
+        margin-top: 5px;
+        justify-content: center;
     }
 }
 @media screen and (max-width: 1024px) {
