@@ -6,7 +6,7 @@
     list-style: none;
 }
 html{
-    background: #000;
+    background: #000000ea;
 }
 .top{
     width: 100%;
@@ -53,6 +53,7 @@ html{
     align-items: center;
     color: white;
     font-size: 17px;
+    /* text-shadow: 0.2em 0.2em 0.2em #e50505; */
 }
 .navbar-item a:hover{
     color: #e50505;
@@ -142,20 +143,56 @@ html{
     max-height: 100%;
 }
 .banner2{
-    width: 1200px;
-    height: 500px;
-    margin: 0 auto;
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+
+}
+.banner2 .bannerbar{
+    display: flex;
+    color: white;
+    width: 100%;
+    height: 100px;
+    justify-content: center;
+    position: relative;
+}
+.bannerbar h2{
+    width: auto;
+    line-height: 55px;
+}
+.bannerbar .banner2-btn{
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-size: 10px;
+    background: #000000ea;
+    color: #fff;
+    border: 2px solid #fff;
+}
+.banner2-btn:hover{
+    background: #000;
+    color: #e50505;
+    border: 2px solid #e50505;
 }
 .cards-box{
     width: 1200px;
     height: 500px;
-    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    /* flex-direction: row; */
 }
 .cards-box .card-item{
-    width: 592.5px;
-    height: 500px;
-    display: inline-block;
-    background: #b0acac;
+    display: flex;
+    width: 50%;
+    height: 600px;
+    /* background: #b0acac; */
     position: relative;
 }
 .card-item .btn-outline-secondary{
@@ -179,16 +216,21 @@ html{
     margin-right: 10px;
 }
 .card-img{
-    width: auto;
-    height: auto;
-    max-width: 100%;
-    max-height: 100%;
+    background-image: url(../img/new.jpg);
+    background-size: cover;
+    /* background-position: center center; */
+
+}
+.card-img2{
+    background-image: url(../img/new2.jpg);
+    background-size: cover;
+    background-position: center center;
 }
 .featured{
     width: 100%;
     height: 500px;
     /* margin: 30px auto 30px; */
-    background: #000;
+    /* background: #000000ea; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -224,7 +266,7 @@ html{
     right: 0;
     margin: auto;
     font-size: 10px;
-    background: #000;
+    background: #000000ea;
     color: #fff;
     border: 2px solid #fff;
 }
@@ -242,22 +284,42 @@ html{
     justify-content: space-between;
 }
 .featured-box .featured-item{
-    width: 290px;
+    width: 590px;
     height: 100%;
     display: flex;
-    background-color: #121212;
-    border-bottom: 1px solid #e50505;
+    /* background-color: #121212; */
+    /* border-bottom: 1px solid #e50505; */
     transition: all 0.2s;
+    justify-content: space-between;
 }
-.featured-box .featured-item:hover{
+/* .featured-box .featured-item:hover{
     border-bottom: 5px solid #e50505;
-}
+} */
 .featured-a{
     position: relative;
-    width: 100%;
+    width: 285px;
     height: 100%;
     display: flex;
-    background-image: url(../img/skateboard/tj-1024w.jpg);
+    background-image: url(../img/skateboard/tj.png);
+    background-size: cover;
+    background-position: center center;
+    /* box-shadow:  -35px -35px 27px #0b0a0a,
+             35px 35px 27px #0f0e0e; */
+}
+.feautred-b3{
+    background-image: url(../img/skateboard/longboard.png);
+    background-size: cover;
+    background-position: center center;
+}
+.feautred-b2{
+    background-image: url(../img/skateboard/skateboard.png);
+    background-size: cover;
+    background-position: center center;
+}
+.feautred-b4{
+    background-image: url(../img/skateboard/accessories.png);
+    background-size: cover;
+    background-position: center center;
 }
 /* .featured-a .mask{
     width: 100%;
@@ -268,29 +330,29 @@ html{
     visibility: hidden;
 } */
 .featured-a .featured-text{
-    width: 100px;
-    height: 50px;
-    bottom: 35px;
-    left: 20px;
+    width: 100%;
+    height: 0px;
+    bottom: 0px;
+    /* left: 20px; */
     position: absolute;
     margin: 0;
     text-align: center;
     line-height: 50px;
     color: white;font-size: 15px;
+    background-color: rgb(255, 255, 255, 0.9);
+    color: #000;
+    opacity: 0;
     /* overflow: hidden; */
 }
-
+.li-1{
+    width: 10px;
+}
 .featured-a:hover .featured-text{
     opacity: 1;
-    height: 70px;
-    font-size: 30px;
+    height: 40px;
+    font-size: 20px;
     animation-play-state: paused;
 
-}
-.featured-a:hover .mask{
-    opacity: 1;
-    visibility: visible;
-    z-index: 10;
 }
 .segmentation{
     width: 1200px;
@@ -348,7 +410,7 @@ html{
 .about{
     width: 100%;
     height: 300px;
-    background: #000;
+    /* background: #000000ea; */
     border-top: 3px solid white;
     padding-top: 50px;
 }
@@ -468,7 +530,7 @@ html{
     height: 50px;
     padding: 10px;
     display: flex;
-    margin-left: 1050px;
+    margin-left: 990px;
 }
 .endtext a{
     color: white;
@@ -525,4 +587,9 @@ html{
 .about_top:hover .ahover{
     opacity: 1;
 }
-
+.sa{
+    color: white;
+}
+.sa:hover{
+    color: #e50505;
+}

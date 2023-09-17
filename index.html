@@ -8,17 +8,18 @@
     <link rel="stylesheet" href="./css/media.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
-    <title>Document</title>
+    <link rel="shortcut icon" href="img/logo2.png" type="">
+    <title>MARS</title>
 </head>
 <body>
-  <div class="top">
+  <div class="top" id="state">
 
   </div>
   <nav class="navbar">
     
     <div class="logo">
-      <img src="./img/logo2.png" class="d-block" alt="">
-      <p style="color: aliceblue;">logo</p>
+      <a href="./index.html"><img src="./img/logo/未标题-3.png" class="d-block" alt=""></a>
+      <!-- <p style="color: aliceblue;">Mars</p> -->
     </div>
     <div class="barnav-menu">
       <button class="menu_btn">
@@ -26,6 +27,9 @@
       </button>
     </div>
     <ul class="navbarbox">
+      <li class="navbar-item">
+        <a href="#">商&nbsp;店</a>
+      </li>
       <li class="navbar-item">
         <a href="#">滑&nbsp;板</a>
       </li>
@@ -60,23 +64,25 @@
         </div>
       </div>
     </div>
-    <div class="segmentation">
-
-    </div>
     <div class="banner2">
+      <div class="bannerbar">
+        <h2>
+          <b>最&nbsp;新&nbsp;推&nbsp;出&nbsp;的&nbsp;产品</b>
+        </h2>
+        <button class="banner2-btn">
+          查看更多商品
+        </button>
+      </div>
       <ul class="cards-box">
-        <li class="card-item card-left">
-          <img  src="./img/5.jpg" class="card-img" alt="">
-          <button type="button" class="btn-outline-secondary">Secondary</button>
+        <li class="card-item card-left card-img">
+          <!-- <img  src="./img/new.jpg" class="card-img" alt=""> -->
+          <button type="button" class="btn-outline-secondary">立即查看</button>
         </li>
-        <li class="card-item">
-          <img src="./img/7.jpg" class="card-img" alt="">
-          <button type="button" class="secondary1 btn-outline-secondary">Secondary</button>
+        <li class="card-item card-img2">
+          <!-- <img src="./img/7.jpg" class="card-img" alt=""> -->
+          <button type="button" class="secondary1 btn-outline-secondary">立即查看</button>
         </li>
       </ul>
-    </div>
-    <div class="segmentation">
-
     </div>
     <div class="featured">
       <div class="heading">
@@ -93,23 +99,21 @@
             <h3 class="featured-text" >推&nbsp;荐</h3>
             <div class="horizontalbar"></div>
           </a>
-        </li>
-        <li class="featured-item featured-lr">
+          <div class="li-1"></div>
           <a href="#" class="featured-a feautred-b2">
             <!-- <img class="d-block" src="./img/skateboard/skateboard.jpg" alt=""> -->
             <div class="mask"></div>
-            <h3 class="featured-text feautred-b2">滑&nbsp;板</h3>
+            <h3 class="featured-text">滑&nbsp;板</h3>
           </a>
         </li>
-        <li class="featured-item featured-lr">
-          <a href="#" class="featured-a">
+        <li class="featured-item featured-lr top-li">
+          <a href="#" class="featured-a feautred-b3">
             <!-- <img src="./img/skateboard/longboard.jpg" alt="" class="d-block"> -->
             <div class="mask"></div>
             <h3 class="featured-text">长&nbsp;板</h3>
           </a>
-        </li>
-        <li class="featured-item">
-          <a href="#" class="featured-a">
+          <div class="li-1"></div>
+          <a href="#" class="featured-a feautred-b4">
             <!-- <img src="./img/skateboard/accessories.jpg" alt="" class="d-block"> -->
             <div class="mask"></div>
             <h3 class="featured-text">配&nbsp;件</h3>
@@ -141,8 +145,8 @@
           <span class="about-ul">
             <ul class="abouttext-logo">
               <li class="about-logo">
-                <img src="./img/logo2.png" alt="" class="d-block imgleft">
-                <div class="about-logo-text">about-logo</div>
+                <img src="./img/logo/未标题-3.png" alt="" class="d-block imgleft">
+                <!-- <div class="about-logo-text">MARS</div> -->
               </li>
               <li class="about-loin "><a href="#">登&nbsp;录</a>
                 <a href="#">注&nbsp;册</a></li>
@@ -174,7 +178,7 @@
               </li>
             </ul>
             <span class="about_top">
-              <a href="#">
+              <a href="#state">
                 <img class="d-block imghover" src="./img/about-top.svg" alt="">
                 <p><a href="#" class="ahover">返回顶部</a></p>
               </a>
@@ -183,11 +187,11 @@
         </div>
         <div class="end">
           <span style="margin-left: 75px;">END</span>
-          <span>简体中文</span>
+          <span><a class="sa"  href="#">简体中文</a></span>
           <div class="endtext">
             <a href="#">隐私</a>
             <div class="dividing"></div>
-            <p>© 2023,Skateboards</p>
+            <p>© 2023,Mars Skateboards</p>
           </div>
           </div>
       </div>

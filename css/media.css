@@ -15,7 +15,7 @@
         width: 100%;
     }
     .navbar .logo{
-        width: 10%;
+        width: 30%;
     }
     .navbarbox{
         display: none;
@@ -40,15 +40,23 @@
         bottom: 10%;
     }
     .banner2{
-        display: none;
+        width: 100%;
+        height: 900px;
     }
+
     .cards-box{
         display: flex;
         flex-direction: column;
         width: 100%;
+        height: 800px;
     }
     .cards-box .card-item{
         display: flex;
+        width: 100%;
+        height: 100%;
+    }
+    .card-left{
+        margin-bottom: 10px;
     }
     .card-img{
         width: 100%;
@@ -73,15 +81,26 @@
     .featured-box .featured-item{
         display: flex;
         width: 100%;
-        height: 100px;
+        height: 400px;
+        flex-direction: row;
+    }
+    .top-li{
+        margin-top: 10px;
     }
     .featured-a{
         display: flex;
         width: 100%;
-        height: 100%;
-        background-image: url(../img/skateboard/tj-800w.jpg);
+        height: 200px;
+        /* background-image: url(../img/skateboard/tj.png); */
+        background-repeat: no-repeat;
+        /* background-position: 60px ; */
+        background-size: cover;
+        /* border: 1px solid red; */
     }
-
+    .featured-a .featured-text{
+        height: 40px;
+        opacity: 1  !important;
+    }
     .video-box{
         margin-top: 20px;
         height: 250px;
@@ -201,6 +220,7 @@
         margin-top: 5px;
         justify-content: center;
     }
+    
 }
 @media screen and (max-width: 1024px) {
     .featured-box{
